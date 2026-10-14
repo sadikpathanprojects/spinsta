@@ -36,3 +36,30 @@ body{background:var(--page);color:var(--hint);font-family:'DM Sans',system-ui,sa
 <div class="stage" id="stage">
 <div class="card" id="card">
   <div class="top">
+    <div class="brand">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="26" stroke="#8fb8b2" stroke-width="5" stroke-dasharray="130 34"/><circle cx="32" cy="32" r="9" fill="#ff6b8b"/></svg>
+      <span>spinsta</span>
+    </div>
+    <div class="date" contenteditable="true" spellcheck="false">Oct 15, 2026</div>
+  </div>
+  <div class="tag" contenteditable="true" spellcheck="false">Breaking</div>
+  <h1 class="headline" contenteditable="true" spellcheck="false">Ships sunk in Strait of Hormuz</h1>
+  <p class="summary" contenteditable="true" spellcheck="false">Cargo vessels were sunk in the Strait of Hormuz during ongoing Iran attacks, threatening a key global shipping route.</p>
+  <div class="why" contenteditable="true" spellcheck="false"><b>Why it matters:</b> Energy and fertilizer supplies are at risk.</div>
+  <div class="foot">
+    <span contenteditable="true" spellcheck="false">Source: Al Jazeera</span>
+    <span class="handle">@spinsta</span>
+  </div>
+</div>
+</div>
+<script>
+function fit(){
+  var s=document.getElementById('stage'),c=document.getElementById('card');
+  var k=s.clientWidth/1080;
+  c.style.transform='scale('+k+')';
+  s.style.height=(1350*k)+'px';
+}
+window.addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
